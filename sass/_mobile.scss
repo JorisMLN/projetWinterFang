@@ -2,11 +2,9 @@
 
 /* Responsiv Mobile First */
 body{
-    @include flexBetweenCenter;
-    flex-direction: column;
-    height: 100vh;
-    background-color: $tertaire;
+    background-color: $tertiaire;
     margin: 0;
+    padding: 0;
     h1{
         font-family: 'trashHand', Impact, 'Arial Narrow Bold', sans-serif;
         color: $fire;
