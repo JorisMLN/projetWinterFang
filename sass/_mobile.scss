@@ -21,12 +21,23 @@ body{
 
 header{
     @include flexAroundCenter;
+    flex-direction: column;
     width: 100%;
     height: 15%;
     background-color: $primaire;
+    h1{
+        @include flexAroundCenter;
+        width: 100%;
+    }
     nav{
         @include flexAroundCenter;
         width: 100%;
+        height: 20%;
+        ul{
+            @include flexAroundCenter;
+            flex-direction: row;
+            width: 100%;
+        }
     }
 }
 
@@ -38,7 +49,14 @@ section{
 }
 footer{
     @include flexAroundCenter;
+    flex-direction: row;
     width: 100%;
     height: 15%;
     background-color: $primaire;
+    ul{
+        @include flexAroundCenter;
+        flex-direction: row;
+        width: 100%;
+        height: 30%;
+    }
 }
