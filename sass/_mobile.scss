@@ -1,7 +1,44 @@
-@import "variable";
+@import "variable&Mixin";
 
 /* Responsiv Mobile First */
-
 body{
-    background-color: $mint;
+    @include flexBetweenCenter;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $tertaire;
+    margin: 0;
+    h1{
+        color: $fire;
+    }
+    h2{
+        color: $sand;
+    }
+    li{
+        color: $sand;
+    }
+    
+}
+
+header{
+    @include flexAroundCenter;
+    width: 100%;
+    height: 15%;
+    background-color: $primaire;
+    nav{
+        @include flexAroundCenter;
+        width: 100%;
+    }
+}
+
+section{
+    @include flexAroundCenter;
+    width: 100%;
+    height: 60%;
+    background-color: $secondaire;
+}
+footer{
+    @include flexAroundCenter;
+    width: 100%;
+    height: 15%;
+    background-color: $primaire;
 }
