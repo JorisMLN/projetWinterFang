@@ -146,14 +146,17 @@ header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid red;
+  border: 2px solid #132B40;
+  border-radius: 12px;
+  width: 90%;
+  height: 10%;
 }
 
 .core__intro p {
   font-size: 20px;
 }
 
-.core__step {
+.core .settings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,12 +169,31 @@ header nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid red;
+  height: 80%;
   width: 90%;
+}
+
+.core .settings__step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #132B40;
+  border-radius: 12px;
+  width: 90%;
+  height: 18%;
   font-size: 25px;
 }
 
-.core__step__choice {
+.core .settings__step__choice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,7 +207,22 @@ header nav ul {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 90%;
-  border: 1px solid blue;
+  height: 40%;
+}
+
+.core .settings__step__choice div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 35%;
+  border: 1px solid #BBE8F2;
+  border-radius: 5px;
 }
 
 footer {

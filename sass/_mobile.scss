@@ -55,22 +55,40 @@ header{
     color: $sand;
     &__intro{
         @include flexAroundCenter;
-        border: 1px solid red;
+        border: 2px solid $primaire;
+        border-radius: 12px;
+        width: 90%;
+        height: 10%;
         p{
             font-size: 20px;
         }
     }
-    &__step{
+    .settings{
         @include flexAroundCenter;
         flex-direction: column;
-        border: 1px solid red;
+        height: 80%;
         width: 90%;
-        font-size: 25px;
-        &__choice{
+        &__step{
             @include flexAroundCenter;
-            flex-direction: row;
+            flex-direction: column;
+            border: 1px solid $primaire;
+            border-radius: 12px;
             width: 90%;
-            border: 1px solid blue;
+            height: 18%;
+            font-size: 25px;
+            &__choice{
+                @include flexAroundCenter;
+                flex-direction: row;
+                width: 90%;
+                height: 40%;
+                div{
+                    @include flexAroundCenter;
+                    height: 100%;
+                    width: 35%;
+                    border: 1px solid $sand;
+                    border-radius: 5px;
+                }
+            }
         }
     }
 }
