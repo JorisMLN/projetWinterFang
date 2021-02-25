@@ -4,16 +4,16 @@ body {
 }
 
 /* Responsive Tablet */
-@media screen and (min-width: 530px) and (max-width: 1000px) {
+@media screen and (min-width: 550px) and (max-width: 1149px) {
   body {
     background-color: gray;
   }
 }
 
 /* Responsive Desktop */
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1150px) {
   body {
-    background-color: gray;
+    background-color: #503838;
   }
 }
 
