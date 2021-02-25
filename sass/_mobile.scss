@@ -8,13 +8,17 @@ body{
     background-color: $tertaire;
     margin: 0;
     h1{
+        font-family: 'trashHand', Impact, 'Arial Narrow Bold', sans-serif;
         color: $fire;
+        margin: 0;
     }
     h2{
         color: $sand;
+        margin: 0;
     }
     li{
         color: $sand;
+        margin: 0;
     }
     
 }
@@ -23,15 +27,16 @@ header{
     @include flexAroundCenter;
     flex-direction: column;
     width: 100%;
-    height: 15%;
+    height: 10%;
     background-color: $primaire;
     h1{
         @include flexAroundCenter;
-        width: 100%;
+        width: 80%;
+        height: 30%;
     }
     nav{
         @include flexAroundCenter;
-        width: 100%;
+        width: 80%;
         height: 20%;
         ul{
             @include flexAroundCenter;
@@ -41,22 +46,42 @@ header{
     }
 }
 
-section{
+.core{
     @include flexAroundCenter;
+    flex-direction: column;
     width: 100%;
-    height: 60%;
+    height: 78%;
     background-color: $secondaire;
+    color: $sand;
+    &__intro{
+        @include flexAroundCenter;
+        border: 1px solid red;
+        p{
+            font-size: 20px;
+        }
+    }
+    &__step{
+        @include flexAroundCenter;
+        flex-direction: column;
+        border: 1px solid red;
+        width: 90%;
+        font-size: 25px;
+        &__choice{
+            @include flexAroundCenter;
+            flex-direction: row;
+            width: 90%;
+            border: 1px solid blue;
+        }
+    }
 }
 footer{
     @include flexAroundCenter;
     flex-direction: row;
     width: 100%;
-    height: 15%;
+    height: 10%;
     background-color: $primaire;
-    ul{
-        @include flexAroundCenter;
-        flex-direction: row;
-        width: 100%;
-        height: 30%;
+    i{
+        font-size: 35px;
+        color: $fire;
     }
 }

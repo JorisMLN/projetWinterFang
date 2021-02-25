@@ -1,4 +1,3 @@
-
 /* Variables */
 
 // $primaire: #014040;
@@ -7,11 +6,17 @@
 // $fire: #591202;
 // $sand: #F28C0F;
 
-$primaire: #202426;
-$secondaire: #6C733D;
-$tertaire: #9DA65D;
-$fire: #8C8C88;
-$sand: #F28C0F;
+// $primaire: #202426;
+// $secondaire: #6C733D;
+// $tertaire: #9DA65D;
+// $fire: #8C8C88;
+// $sand: #F28C0F;
+
+$primaire: #132B40;
+$secondaire: #224459;
+$tertaire: #4A738C;
+$fire: #AEDFF2;
+$sand: #BBE8F2;
 
 /* Mixins */
 @mixin flexAroundCenter {
@@ -23,4 +28,24 @@ $sand: #F28C0F;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Fonts */
+@font-face{
+    font-family:'reey';
+    src: url('fonts/Reey-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family:'blackjack';
+    src: url('fonts/blackjack.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family:'trashHand';
+    src: url('fonts/TrashHand.ttf');
+    font-weight: normal;
+    font-style: normal;
 }

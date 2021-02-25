@@ -1,5 +1,27 @@
 /* Variables */
 /* Mixins */
+/* Fonts */
+@font-face {
+  font-family: 'reey';
+  src: url("fonts/Reey-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'blackjack';
+  src: url("fonts/blackjack.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'trashHand';
+  src: url("fonts/TrashHand.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Responsiv Mobile First */
 body {
   display: -webkit-box;
@@ -16,20 +38,24 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  background-color: #9DA65D;
+  background-color: #4A738C;
   margin: 0;
 }
 
 body h1 {
-  color: #8C8C88;
+  font-family: 'trashHand', Impact, 'Arial Narrow Bold', sans-serif;
+  color: #AEDFF2;
+  margin: 0;
 }
 
 body h2 {
-  color: #F28C0F;
+  color: #BBE8F2;
+  margin: 0;
 }
 
 body li {
-  color: #F28C0F;
+  color: #BBE8F2;
+  margin: 0;
 }
 
 header {
@@ -46,8 +72,8 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 15%;
-  background-color: #202426;
+  height: 10%;
+  background-color: #132B40;
 }
 
 header h1 {
@@ -59,7 +85,8 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 80%;
+  height: 30%;
 }
 
 header nav {
@@ -71,7 +98,7 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 80%;
   height: 20%;
 }
 
@@ -91,7 +118,7 @@ header nav ul {
   width: 100%;
 }
 
-section {
+.core {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,9 +127,65 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  height: 60%;
-  background-color: #6C733D;
+  height: 78%;
+  background-color: #224459;
+  color: #BBE8F2;
+}
+
+.core__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
+}
+
+.core__intro p {
+  font-size: 20px;
+}
+
+.core__step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid red;
+  width: 90%;
+  font-size: 25px;
+}
+
+.core__step__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  border: 1px solid blue;
 }
 
 footer {
@@ -119,25 +202,13 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  height: 15%;
-  background-color: #202426;
+  height: 10%;
+  background-color: #132B40;
 }
 
-footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  height: 30%;
+footer i {
+  font-size: 35px;
+  color: #AEDFF2;
 }
 
 /* Responsive Tablet */
@@ -174,4 +245,25 @@ footer ul {
 
 /* Variables */
 /* Mixins */
+/* Fonts */
+@font-face {
+  font-family: 'reey';
+  src: url("fonts/Reey-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'blackjack';
+  src: url("fonts/blackjack.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'trashHand';
+  src: url("fonts/TrashHand.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 /*# sourceMappingURL=styles.css.map */
