@@ -1,0 +1,37 @@
+/* Responsiv Mobile First */
+body {
+  background-color: #98ff98;
+}
+
+/* Responsive Tablet */
+@media screen and (min-width: 530px) and (max-width: 1000px) {
+  body {
+    background-color: gray;
+  }
+}
+
+/* Responsive Desktop */
+@media screen and (min-width: 1001px) {
+  body {
+    background-color: gray;
+  }
+}
+
+@-webkit-keyframes test {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes test {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
