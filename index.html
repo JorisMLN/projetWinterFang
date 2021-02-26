@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="https://kit.fontawesome.com/e7a1eca83b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
     <title> Projet Winter Fang (dev version)</title>
 </head>
@@ -36,9 +37,9 @@
         </header>
 
         <!-- Section -->
-        <section class="core">
+        <section id="app" class="core">
             <div class="core__intro">
-                <p>It's a good place to die, but not today.</p>
+                <p>{{intro}}</p>
             </div>
             <div class="settings">
                 <div class="settings__step appear__item1">
@@ -75,6 +76,7 @@
             <div><i class="fab fa-discord"></i></div>
         </footer>
     </div>
+    <script src="indexVue.js"></script>
 </body>
 
 </html>

@@ -1,40 +1,40 @@
 /* Animation d'arrivée sur la page */
 
-.appear__item1{
-    animation: appear 4000ms both;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-}
-.appear__item2{
-    animation: appear 500ms both;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-    animation-delay: 4150ms;
-}
-.appear__item3{
-    animation: appear 500ms both;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-    animation-delay: 4300ms;
-}
-.appear__item4{
-    animation: appear 500ms both;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-    animation-delay: 4450ms;
-}
-.appear__item5{
-    animation: appear 500ms both;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-    animation-delay: 4600ms;
-}
+// .appear__item1{
+//     animation: appear 4000ms both;
+//     animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+// }
+// .appear__item2{
+//     animation: appear 500ms both;
+//     animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+//     animation-delay: 4150ms;
+// }
+// .appear__item3{
+//     animation: appear 500ms both;
+//     animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+//     animation-delay: 4300ms;
+// }
+// .appear__item4{
+//     animation: appear 500ms both;
+//     animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+//     animation-delay: 4450ms;
+// }
+// .appear__item5{
+//     animation: appear 500ms both;
+//     animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+//     animation-delay: 4600ms;
+// }
 
-@keyframes appear{
-    from{
-        opacity: 0;
-        margin-bottom: -15px;
-    }
-    to{
-        opacity: 1;
-        margin-bottom: 0px;
-    }
-}
+// @keyframes appear{
+//     from{
+//         opacity: 0;
+//         margin-bottom: -15px;
+//     }
+//     to{
+//         opacity: 1;
+//         margin-bottom: 0px;
+//     }
+// }
 
 /* Loading Animation */
 
@@ -42,7 +42,7 @@
     @include flexAroundCenter;
     flex-direction: column;
     height: 100vh;
-    animation: hideSpin 3000ms forwards;
+    animation: hideSpin 1ms forwards;
     overflow-x: hidden;
 }
 .loading{
@@ -51,7 +51,7 @@
     height: 100%;
     background-color: $tertiaire;
     position: absolute;
-    animation: loading 4000ms forwards;
+    animation: loading 1ms forwards;
     &__anim{
         @include flexAroundCenter;
         flex-direction: column;
@@ -60,13 +60,13 @@
             @include flexAroundCenter;
             color: $primaire;
             font-size: 200px;
-            animation: loadingSpinner 4000ms 300ms linear both infinite;
+            animation: loadingSpinner 1ms 300ms linear both infinite;
             &--title{
                 @include flexAroundCenter;
                 align-self: center;
                 color: $primaire;
                 font-size: 30px;
-                animation: loadingSpinner 4000ms 1000ms linear both infinite;
+                animation: loadingSpinner 1ms 1000ms linear both infinite;
             }
         }
     }
