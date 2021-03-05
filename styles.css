@@ -107,10 +107,6 @@ header nav ul {
   height: 90%;
 }
 
-header nav ul .option {
-  border: 1px solid red;
-}
-
 header nav ul .option a {
   text-decoration: none;
   color: white;
