@@ -25,24 +25,24 @@
 
 /* Responsiv Mobile First */
 body {
-  background-color: #4A738C;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
 
 body h1 {
   font-family: 'trashHand', Impact, 'Arial Narrow Bold', sans-serif;
-  color: #AEDFF2;
+  color: #FA6135;
   margin: 0;
 }
 
 body h2 {
-  color: #BBE8F2;
+  color: #F8AF2C;
   margin: 0;
 }
 
 body li {
-  color: #BBE8F2;
+  color: #F8AF2C;
   margin: 0;
 }
 
@@ -59,9 +59,13 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 7vh;
   width: 100%;
-  height: 10%;
-  background-color: #132B40;
+  background-color: #0D2E41;
+}
+
+header #appHeader {
+  color: white;
 }
 
 header h1 {
@@ -126,9 +130,9 @@ header nav ul .option a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 78%;
-  background-color: #224459;
-  color: #BBE8F2;
+  height: 80vh;
+  background-color: #00798A;
+  color: #F8AF2C;
 }
 
 .core__intro {
@@ -140,7 +144,7 @@ header nav ul .option a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #132B40;
+  border: 2px solid #0D2E41;
   border-radius: 12px;
   width: 90%;
   height: 10%;
@@ -180,7 +184,7 @@ header nav ul .option a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #132B40;
+  border: 1px solid #0D2E41;
   border-radius: 12px;
   width: 90%;
   height: 18%;
@@ -215,7 +219,7 @@ header nav ul .option a {
           align-items: center;
   height: 100%;
   width: 35%;
-  border: 1px solid #BBE8F2;
+  border: 1px solid #F8AF2C;
   border-radius: 5px;
 }
 
@@ -238,201 +242,20 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  height: 10%;
-  background-color: #132B40;
+  height: 13vh;
+  color: white;
+  background-color: #0D2E41;
 }
 
 footer i {
   font-size: 35px;
-  color: #AEDFF2;
+  color: #FA6135;
 }
 
 /* Responsive Tablet */
-@media screen and (min-width: 550px) and (max-width: 1149px) {
-  body {
-    background-color: gray;
-  }
-}
-
 /* Responsive Desktop */
-@media screen and (min-width: 1150px) {
-  body {
-    background-color: #503838;
-  }
-}
-
 /* Animation d'arrivée sur la page */
 /* Loading Animation */
-.hideSpin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-  -webkit-animation: hideSpin 1ms forwards;
-          animation: hideSpin 1ms forwards;
-  overflow-x: hidden;
-}
-
-.loading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: #4A738C;
-  position: absolute;
-  -webkit-animation: loading 1ms forwards;
-          animation: loading 1ms forwards;
-}
-
-.loading__anim {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-
-.loading__anim__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #132B40;
-  font-size: 200px;
-  -webkit-animation: loadingSpinner 1ms 300ms linear both infinite;
-          animation: loadingSpinner 1ms 300ms linear both infinite;
-}
-
-.loading__anim__item--title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  color: #132B40;
-  font-size: 30px;
-  -webkit-animation: loadingSpinner 1ms 1000ms linear both infinite;
-          animation: loadingSpinner 1ms 1000ms linear both infinite;
-}
-
-@-webkit-keyframes hideSpin {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: scroll;
-  }
-}
-
-@keyframes hideSpin {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: scroll;
-  }
-}
-
-@-webkit-keyframes loading {
-  from {
-    opacity: 1;
-    z-index: 3;
-  }
-  90% {
-    opacity: 1;
-    z-index: 3;
-  }
-  to {
-    opacity: 0;
-    z-index: -5;
-  }
-}
-
-@keyframes loading {
-  from {
-    opacity: 1;
-    z-index: 3;
-  }
-  90% {
-    opacity: 1;
-    z-index: 3;
-  }
-  to {
-    opacity: 0;
-    z-index: -5;
-  }
-}
-
-@-webkit-keyframes loadingSpinner {
-  from {
-    -webkit-transform: opacity(0);
-            transform: opacity(0);
-    color: #4A738C;
-  }
-  25% {
-    color: #224459;
-  }
-  50% {
-    color: #132B40;
-    -webkit-transform: opacity(1);
-            transform: opacity(1);
-  }
-  to {
-    color: #132B40;
-  }
-}
-
-@keyframes loadingSpinner {
-  from {
-    -webkit-transform: opacity(0);
-            transform: opacity(0);
-    color: #4A738C;
-  }
-  25% {
-    color: #224459;
-  }
-  50% {
-    color: #132B40;
-    -webkit-transform: opacity(1);
-            transform: opacity(1);
-  }
-  to {
-    color: #132B40;
-  }
-}
-
 /* Variables */
 /* Mixins */
 /* Fonts */

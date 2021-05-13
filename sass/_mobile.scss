@@ -2,7 +2,7 @@
 
 /* Responsiv Mobile First */
 body{
-    background-color: $tertiaire;
+    background-color: white;
     margin: 0;
     padding: 0;
     h1{
@@ -24,9 +24,12 @@ body{
 header{
     @include flexAroundCenter;
     flex-direction: column;
+    height: 7vh;
     width: 100%;
-    height: 10%;
     background-color: $primaire;
+    #appHeader{
+        color: white;
+    }
     h1{
         @include flexAroundCenter;
         width: 80%;
@@ -57,7 +60,7 @@ header{
     @include flexAroundCenter;
     flex-direction: column;
     width: 100%;
-    height: 78%;
+    height: 80vh;
     background-color: $secondaire;
     color: $sand;
     &__intro{
@@ -107,7 +110,8 @@ footer{
     @include flexAroundCenter;
     flex-direction: row;
     width: 100%;
-    height: 10%;
+    height: 13vh;
+    color: white;
     background-color: $primaire;
     i{
         font-size: 35px;

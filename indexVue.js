@@ -1,22 +1,27 @@
-/* Variables */
-const elt = document.getElementById("idtest");
 
-/* Script */
-elt.addEventListener('click', function() {
-    elt.style.color = "#457898";
-    elt.innerHTML = ("ordre66");
+/* - - - - - - - - - - Vue App - - - - - - - - - - */
+
+
+let appHeader = new Vue({
+    el: '#appHeader',
+    data: {
+        title: 'Welcome to WinterFang Game'
+    }
 });
+// appHeader.message = 'ohh mais lol';
 
+let appCore = new Vue({
+    el: '#appCore',
+    data: {
+        message: 'Game One ?'
+    }
+});
+// appCore.message = 'ohh mais lol';
 
-/* Vue */
-// const app = new Vue({
-//     el: '#app',
-//     data:{
-//         intro: "It's a good place to die, but not today",
-
-//     },
-//     computed: {
-        
-//     }
-// });
-
+let appFooter = new Vue({
+    el: '#appFooter',
+    data: {
+        list: 'Network'
+    }
+});
+// appCore.message = 'ohh mais lol';
